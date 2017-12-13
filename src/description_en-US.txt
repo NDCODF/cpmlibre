@@ -1,0 +1,1 @@
+﻿"Chinese Punctuation Marks ( for LibreOffice)" provides a toolbar  with shortcuts for wide-character punctuation marks insertion. The version is for OpenOffice 3.x and LibreOffice .

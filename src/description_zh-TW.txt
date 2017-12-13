@@ -1,0 +1,1 @@
+﻿「中文標點符號工具列(LibreOffice適用)」將常用全型標點符號建於工具列便於使用。此版本適用於OpenOffice3.x及LibreOffice。

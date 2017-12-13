@@ -1,0 +1,1116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data 
+ xmlns:oor="http://openoffice.org/2001/registry"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ oor:name="Addons"
+ oor:package="org.openoffice.Office">
+	<node oor:name="AddonUI">
+		<node oor:name="OfficeToolBar">
+			<node oor:name="addons.cpm.toolbar1" oor:op="replace">
+                    <node oor:name="B00" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Comma</value>
+                            <value xml:lang="zh-TW">逗號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is00?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>                
+                    <node oor:name="B01" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Period</value>
+                            <value xml:lang="zh-TW">句號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is01?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node> 
+                    <node oor:name="B02" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Dot</value>
+                            <value xml:lang="zh-TW">頓號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is02?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B03" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Semicolon</value>
+                            <value xml:lang="zh-TW">分號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is03?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B04" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Colon</value>
+                            <value xml:lang="zh-TW">冒號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is04?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B05" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Exclamation Mark</value>
+                            <value xml:lang="zh-TW">驚嘆號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is05?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B06" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Question Mark</value>
+                            <value xml:lang="zh-TW">問號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is06?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B07" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Brackets</value>
+                            <value xml:lang="zh-TW">夾注號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is07?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B08" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Brackets</value>
+                            <value xml:lang="zh-TW">方括號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is08?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B09" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Brackets</value>
+                            <value xml:lang="zh-TW">方頭括號(黑括號)</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is09?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B10" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Chinese Quotation Mark</value>
+                            <value xml:lang="zh-TW">引號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is10?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B11" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Chinese Quotation Mark</value>
+                            <value xml:lang="zh-TW">引號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is11?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B12" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Book Name Quotation Mark</value>
+                            <value xml:lang="zh-TW">單書名號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is12?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B13" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Book Name Quotation Mark</value>
+                            <value xml:lang="zh-TW">雙書名號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is13?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B14" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Quotation Mark</value>
+                            <value xml:lang="zh-TW">單引號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is14?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B15" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Quotation Mark</value>
+                            <value xml:lang="zh-TW">雙引號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is15?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B16" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Ellipsis</value>
+                            <value xml:lang="zh-TW">刪節號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is16?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B17" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Ellipsis</value>
+                            <value xml:lang="zh-TW">刪節號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is17?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B18" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Ellipsis</value>
+                            <value xml:lang="zh-TW">間隔號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is18?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B19" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Dash</value>
+                            <value xml:lang="zh-TW">破折號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is19?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B20" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Underscore</value>
+                            <value xml:lang="zh-TW">底線</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is20?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B21" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Slash</value>
+                            <value xml:lang="zh-TW">斜線</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is21?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B22" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Reference Mark</value>
+                            <value xml:lang="zh-TW">註解</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is22?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+
+                    <node oor:name="B23" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Japanese Yen</value>
+                            <value xml:lang="zh-TW">日圓</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is23?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B24" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Empty Square</value>
+                            <value xml:lang="zh-TW">空心方形</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is24?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B25" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Filled Square</value>
+                            <value xml:lang="zh-TW">實心方形</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is25?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B26" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Plus</value>
+                            <value xml:lang="zh-TW">加號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is26?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B27" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Minus</value>
+                            <value xml:lang="zh-TW">減號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is27?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B28" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Multiply</value>
+                            <value xml:lang="zh-TW">乘號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is28?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B29" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Obelus</value>
+                            <value xml:lang="zh-TW">除號</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is29?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B30" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Right Arrow</value>
+                            <value xml:lang="zh-TW">箭號(向右)</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is30?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B31" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Left Arrow</value>
+                            <value xml:lang="zh-TW">箭號(向左)</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is31?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B32" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Up Arrow</value>
+                            <value xml:lang="zh-TW">箭號(向上)</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is32?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+
+                    <node oor:name="B33" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Down Arrow</value>
+                            <value xml:lang="zh-TW">箭號(向下)</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is33?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+
+                    <node oor:name="B34" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Degree C</value>
+                            <value xml:lang="zh-TW">攝氏溫度</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is34?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B35" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Degree F</value>
+                            <value xml:lang="zh-TW">華氏溫度</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is35?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B36" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Empty Cricle</value>
+                            <value xml:lang="zh-TW">空心圓形</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is36?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B37" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">checked</value>
+                            <value xml:lang="zh-TW">打勾</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is37?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B38" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">Unchecked</value>
+                            <value xml:lang="zh-TW">取消打勾</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is38?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+
+
+
+
+			</node>
+		</node>
+        <node oor:name="Images">
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images0" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is00?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc00.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc00.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images1" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is01?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc01.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc01.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images2" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is02?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc02.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc02.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images3" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is03?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc03.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc03.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images4" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is04?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc04.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc04.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images5" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is05?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc05.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc05.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images6" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is06?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc06.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc06.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images7" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is07?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc07.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc07.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images8" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is08?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc08.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc08.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images9" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is09?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc09.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc09.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images10" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is10?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc10.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc10.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images11" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is11?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc11.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc11.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images12" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is12?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc12.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc12.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images13" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is13?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc13.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc13.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images14" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is14?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc14.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc14.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images15" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is15?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc15.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc15.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images16" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is16?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc16.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images17" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is17?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc17.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc17.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images18" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is18?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc18.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc18.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images19" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is19?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc19.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc19.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images20" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is20?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc20.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc20.png</value>
+                    </prop>
+                </node>
+            </node>
+  
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images21" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is21?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc21.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc21.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images22" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is22?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc22.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc22.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images23" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is23?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc23.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc23.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images24" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is24?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc24.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc24.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images25" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is25?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc25.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc25.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images26" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is26?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc26.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc26.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images27" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is27?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc27.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc27.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images28" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is28?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc28.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc28.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images29" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is29?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc29.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc29.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images30" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is30?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc30.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc30.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images31" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is31?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc31.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc31.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images32" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is32?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc32.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc32.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images33" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is33?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc33.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc33.png</value>
+                    </prop>
+                </node>
+            </node>  
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images34" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is34?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc34.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc34.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images35" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is35?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc35.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc35.png</value>
+                    </prop>
+                </node>
+            </node>  
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images36" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is36?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc36.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc36.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images37" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is37?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc37.png</value>
+                    </prop>
+                    <prop oor:name="ImageSmallHCURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc37.png</value>
+                    </prop>
+                </node>
+            </node>  
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images38" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is38?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc38.png</value>
+                    </prop>
+                    <prop oor:name="ImageSmallHCURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc38.png</value>
+                    </prop>
+                </node>
+            </node>  
+
+        </node>
+	</node>
+</oor:component-data>

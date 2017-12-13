@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="SymbolTools" script:language="StarBasic">REM  *****  BASIC  *****
+
+
+sub is00
+	insertSymbol(symbolAt(0))
+end sub
+
+sub is01
+	insertSymbol(symbolAt(1))
+end sub
+
+sub is02
+	insertSymbol(symbolAt(2))
+end sub
+
+sub is03
+	insertSymbol(symbolAt(3))
+end sub
+
+sub is04
+	insertSymbol(symbolAt(4))
+end sub
+
+sub is05
+	insertSymbol(symbolAt(5))
+end sub
+
+sub is06
+	insertSymbol(symbolAt(6))
+end sub
+
+sub is07
+	insertSymbol(symbolAt(7))
+end sub
+
+sub is08
+	insertSymbol(symbolAt(8))
+end sub
+
+sub is09
+	insertSymbol(symbolAt(9))
+end sub
+
+sub is10
+	insertSymbol(symbolAt(10))
+end sub
+
+sub is11
+	insertSymbol(symbolAt(11))
+end sub
+
+sub is12
+	insertSymbol(symbolAt(12))
+end sub
+
+sub is13
+	insertSymbol(symbolAt(13))
+end sub
+
+sub is14
+	insertSymbol(symbolAt(14))
+end sub
+
+sub is15
+	insertSymbol(symbolAt(15))
+end sub
+
+sub is16
+	insertSymbol(symbolAt(16))
+end sub
+
+sub is17
+	insertSymbol(symbolAt(17))
+end sub
+
+sub is18
+	insertSymbol(symbolAt(18))
+end sub
+
+sub is19
+	insertSymbol(symbolAt(19))
+end sub
+
+sub is20
+	insertSymbol(symbolAt(20))
+end sub
+
+sub is21
+	insertSymbol(symbolAt(21))
+end sub
+
+sub is22
+	insertSymbol(symbolAt(22))
+end sub
+
+sub is23
+	insertSymbol(symbolAt(23))
+end sub
+
+sub is24
+	insertSymbol(symbolAt(24))
+end sub
+
+sub is25
+	insertSymbol(symbolAt(25))
+end sub
+
+sub is26
+	insertSymbol(symbolAt(26))
+end sub
+
+sub is27
+	insertSymbol(symbolAt(27))
+end sub
+
+sub is28
+	insertSymbol(symbolAt(28))
+end sub
+
+sub is29
+	insertSymbol(symbolAt(29))
+end sub
+
+sub is30
+	insertSymbol(symbolAt(30))
+end sub
+
+sub is31
+	insertSymbol(symbolAt(31))
+end sub
+
+sub is32
+	insertSymbol(symbolAt(32))
+end sub
+
+sub is33
+	insertSymbol(symbolAt(33))
+end sub
+
+sub is34
+	insertSymbol(symbolAt(34))
+end sub
+
+sub is35
+	insertSymbol(symbolAt(35))
+end sub
+
+sub is36
+	insertSymbol(symbolAt(36))
+end sub
+
+sub is37
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(37))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(37))
+end sub
+
+sub is38
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(38))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(38))
+end sub
+
+Function symbolAt(index as Integer) As String
+	Static SymbolArray()  
+	if (UBound(SymbolArray()) &lt; 1) then	
+		SymbolArray = Array( &quot;，&quot;,&quot;。&quot;,&quot;、&quot;,&quot;；&quot;,&quot;：&quot;,&quot;！&quot;,&quot;？&quot;,&quot;（）&quot;,&quot;〔〕&quot;,&quot;【】&quot;,&quot;「」&quot;,&quot;『』&quot;,&quot;〈〉&quot;,&quot;《》&quot;,&quot;‘’&quot;,&quot;“”&quot; , _
+		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;, &quot;○&quot;,&quot;&quot;,&quot;&quot;)
+	end if
+	symbolAt = SymbolArray(index)
+End Function
+
+
+Function getDocType(vDoc as object) As String
+
+	If vDoc.SupportsService(&quot;com.sun.star.sheet.SpreadsheetDocument&quot;) Then
+		getDocType = &quot;calc&quot;
+	Else
+		getDocType = &quot;others&quot;
+	End If
+
+End Function
+
+
+sub insertSymbol(Symbols as String)
+rem ----------------------------------------------------------------------
+rem define variables
+dim document   as object
+dim dispatcher as object
+rem ----------------------------------------------------------------------
+rem get access to the document
+document   = ThisComponent.CurrentController.Frame
+dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
+
+rem ----------------------------------------------------------------------
+dim args1(1) as new com.sun.star.beans.PropertyValue
+args1(0).Name = &quot;Symbols&quot;
+args1(0).Value = Symbols
+dispatcher.executeDispatch(document, &quot;.uno:InsertSymbol&quot;, &quot;&quot;, 0, args1())
+if (len(Symbols)&gt;1 and getDocType(ThisComponent)&lt;&gt;&quot;calc&quot;) then
+	dispatcher.executeDispatch(document, &quot;.uno:GoLeft&quot;, &quot;&quot;, 0, args1())
+end if
+end sub
+
+
+
+
+</script:module>
