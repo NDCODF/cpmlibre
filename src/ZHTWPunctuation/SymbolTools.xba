@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="SymbolTools" script:language="StarBasic">REM  *****  BASIC  *****
 
@@ -177,11 +177,37 @@ err:
         insertSymbol(symbolAt(38))
 end sub
 
+sub is39
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(39))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(39))
+end sub
+
+sub is40
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(40))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(40))
+end sub
+
 Function symbolAt(index as Integer) As String
 	Static SymbolArray()  
 	if (UBound(SymbolArray()) &lt; 1) then	
 		SymbolArray = Array( &quot;，&quot;,&quot;。&quot;,&quot;、&quot;,&quot;；&quot;,&quot;：&quot;,&quot;！&quot;,&quot;？&quot;,&quot;（）&quot;,&quot;〔〕&quot;,&quot;【】&quot;,&quot;「」&quot;,&quot;『』&quot;,&quot;〈〉&quot;,&quot;《》&quot;,&quot;‘’&quot;,&quot;“”&quot; , _
-		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;, &quot;○&quot;,&quot;&quot;,&quot;&quot;)
+		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;, &quot;○&quot;,&quot;&quot;,&quot;&quot;, &quot;&quot;, &quot;&quot;)
 	end if
 	symbolAt = SymbolArray(index)
 End Function
