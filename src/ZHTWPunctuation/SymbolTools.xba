@@ -152,16 +152,7 @@ sub is36
 end sub
 
 sub is37
-        On Error GoTo err
-        cursor = thiscomponent.currentController.getViewCursor()
-        originFont = cursor.charFontNameAsian
-        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
-        insertSymbol(symbolAt(37))
-        cursor.charFontNameAsian = originFont
-        Exit Sub
-err:
-        insertSymbol(symbolAt(37))
+  insertSymbol(symbolAt(37))
 end sub
 
 sub is38
@@ -203,11 +194,24 @@ err:
         insertSymbol(symbolAt(40))
 end sub
 
+sub is41
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(41))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(41))
+end sub
+
 Function symbolAt(index as Integer) As String
 	Static SymbolArray()  
 	if (UBound(SymbolArray()) &lt; 1) then	
 		SymbolArray = Array( &quot;，&quot;,&quot;。&quot;,&quot;、&quot;,&quot;；&quot;,&quot;：&quot;,&quot;！&quot;,&quot;？&quot;,&quot;（）&quot;,&quot;〔〕&quot;,&quot;【】&quot;,&quot;「」&quot;,&quot;『』&quot;,&quot;〈〉&quot;,&quot;《》&quot;,&quot;‘’&quot;,&quot;“”&quot; , _
-		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;, &quot;○&quot;,&quot;&quot;,&quot;&quot;, &quot;&quot;, &quot;&quot;)
+		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;, &quot;○&quot;, &quot;●&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
 	end if
 	symbolAt = SymbolArray(index)
 End Function

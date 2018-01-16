@@ -2,7 +2,7 @@ ZIP=`which zip`
 Productname=cpmlibre
 
 all:
-	./addver.sh \
+	./addver.sh; \
 	cd src; \
 	$(ZIP) -r ../$(Productname).oxt *; \
 	cd -; \

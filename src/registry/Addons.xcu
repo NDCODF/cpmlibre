@@ -580,7 +580,7 @@ oor:package="org.openoffice.Office">
                             <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
                         </prop>
                         <prop oor:name="Title" oor:type="xs:string">
-                            <value xml:lang="en-US">Empty Cricle</value>
+                            <value xml:lang="en-US">Empty Circle</value>
                             <value xml:lang="zh-TW">空心圓形</value>
                         </prop>
                         <prop oor:name="URL" oor:type="xs:string">
@@ -595,8 +595,8 @@ oor:package="org.openoffice.Office">
                             <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
                         </prop>
                         <prop oor:name="Title" oor:type="xs:string">
-                            <value xml:lang="en-US">checked</value>
-                            <value xml:lang="zh-TW">有框打勾</value>
+                            <value xml:lang="en-US">Solid Circle</value>
+                            <value xml:lang="zh-TW">實心圓形</value>
                         </prop>
                         <prop oor:name="URL" oor:type="xs:string">
                             <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is37?language=Basic&amp;location=application</value>
@@ -610,8 +610,8 @@ oor:package="org.openoffice.Office">
                             <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
                         </prop>
                         <prop oor:name="Title" oor:type="xs:string">
-                            <value xml:lang="en-US">Unchecked</value>
-                            <value xml:lang="zh-TW">有框打叉</value>
+                            <value xml:lang="en-US">checked on Box</value>
+                            <value xml:lang="zh-TW">有框打勾</value>
                         </prop>
                         <prop oor:name="URL" oor:type="xs:string">
                             <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is38?language=Basic&amp;location=application</value>
@@ -625,8 +625,8 @@ oor:package="org.openoffice.Office">
                             <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
                         </prop>
                         <prop oor:name="Title" oor:type="xs:string">
-                            <value xml:lang="en-US">Unchecked</value>
-                            <value xml:lang="zh-TW">無框打勾</value>
+                            <value xml:lang="en-US">X mark on Box</value>
+                            <value xml:lang="zh-TW">有框打叉</value>
                         </prop>
                         <prop oor:name="URL" oor:type="xs:string">
                             <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is39?language=Basic&amp;location=application</value>
@@ -640,11 +640,26 @@ oor:package="org.openoffice.Office">
                             <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
                         </prop>
                         <prop oor:name="Title" oor:type="xs:string">
-                            <value xml:lang="en-US">Unchecked</value>
-                            <value xml:lang="zh-TW">無框打叉</value>
+                            <value xml:lang="en-US"></value>checked</value>
+                            <value xml:lang="zh-TW">無框打勾</value>
                         </prop>
                         <prop oor:name="URL" oor:type="xs:string">
                             <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is40?language=Basic&amp;location=application</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                    </node>
+                    <node oor:name="B41" oor:op="replace">
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.text.TextDocument,com.sun.star.sheet.SpreadsheetDocument,com.sun.star.presentation.PresentationDocument,com.sun.star.drawing.DrawingDocument</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value xml:lang="en-US">X mark</value>
+                            <value xml:lang="zh-TW">無框打叉</value>
+                        </prop>
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is41?language=Basic&amp;location=application</value>
                         </prop>
                         <prop oor:name="Target" oor:type="xs:string">
                             <value>_self</value>
@@ -1185,6 +1200,19 @@ oor:package="org.openoffice.Office">
                     </prop>
                     <prop oor:name="ImageSmallHCURL" oor:type="xs:string">
                         <value>%origin%/../iconsb/lc40.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="org.apache.openoffice.framework.addons.ToolbarWithWindowState.images41" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ZHTWPunctuation.SymbolTools.is41?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/../icons/lc41.png</value>
+                    </prop>
+                    <prop oor:name="ImageSmallHCURL" oor:type="xs:string">
+                        <value>%origin%/../iconsb/lc41.png</value>
                     </prop>
                 </node>
             </node>  
