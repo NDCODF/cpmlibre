@@ -112,23 +112,59 @@ sub is26
 end sub
 
 sub is27
-	insertSymbol(symbolAt(27))
+  insertSymbol(symbolAt(27))
 end sub
 
 sub is28
-	insertSymbol(symbolAt(28))
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(28))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(28))
 end sub
 
 sub is29
-	insertSymbol(symbolAt(29))
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(29))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(29))
 end sub
 
 sub is30
-	insertSymbol(symbolAt(30))
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(30))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(30))
 end sub
 
 sub is31
-	insertSymbol(symbolAt(31))
+        On Error GoTo err
+        cursor = thiscomponent.currentController.getViewCursor()
+        originFont = cursor.charFontNameAsian
+        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
+
+        insertSymbol(symbolAt(31))
+        cursor.charFontNameAsian = originFont
+        Exit Sub
+err:
+        insertSymbol(symbolAt(31))
 end sub
 
 sub is32
@@ -152,66 +188,32 @@ sub is36
 end sub
 
 sub is37
-  insertSymbol(symbolAt(37))
+	insertSymbol(symbolAt(37))
 end sub
 
 sub is38
-        On Error GoTo err
-        cursor = thiscomponent.currentController.getViewCursor()
-        originFont = cursor.charFontNameAsian
-        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
-        insertSymbol(symbolAt(38))
-        cursor.charFontNameAsian = originFont
-        Exit Sub
-err:
-        insertSymbol(symbolAt(38))
+	insertSymbol(symbolAt(38))
 end sub
 
 sub is39
-        On Error GoTo err
-        cursor = thiscomponent.currentController.getViewCursor()
-        originFont = cursor.charFontNameAsian
-        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
-        insertSymbol(symbolAt(39))
-        cursor.charFontNameAsian = originFont
-        Exit Sub
-err:
-        insertSymbol(symbolAt(39))
+	insertSymbol(symbolAt(39))
 end sub
 
 sub is40
-        On Error GoTo err
-        cursor = thiscomponent.currentController.getViewCursor()
-        originFont = cursor.charFontNameAsian
-        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
-        insertSymbol(symbolAt(40))
-        cursor.charFontNameAsian = originFont
-        Exit Sub
-err:
-        insertSymbol(symbolAt(40))
+	insertSymbol(symbolAt(40))
 end sub
 
 sub is41
-        On Error GoTo err
-        cursor = thiscomponent.currentController.getViewCursor()
-        originFont = cursor.charFontNameAsian
-        cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
-        insertSymbol(symbolAt(41))
-        cursor.charFontNameAsian = originFont
-        Exit Sub
-err:
-        insertSymbol(symbolAt(41))
+	insertSymbol(symbolAt(41))
 end sub
+
+
 
 Function symbolAt(index as Integer) As String
 	Static SymbolArray()  
 	if (UBound(SymbolArray()) &lt; 1) then	
 		SymbolArray = Array( &quot;，&quot;,&quot;。&quot;,&quot;、&quot;,&quot;；&quot;,&quot;：&quot;,&quot;！&quot;,&quot;？&quot;,&quot;（）&quot;,&quot;〔〕&quot;,&quot;【】&quot;,&quot;「」&quot;,&quot;『』&quot;,&quot;〈〉&quot;,&quot;《》&quot;,&quot;‘’&quot;,&quot;“”&quot; , _
-		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;, &quot;○&quot;, &quot;●&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;)
+		&quot;…&quot;,&quot;‥&quot;,&quot;‧&quot;,	&quot;—&quot;, &quot;＿&quot;, &quot;∕&quot;, &quot;※&quot;, &quot;￥&quot;, &quot;□&quot;, &quot;■&quot; , &quot;○&quot;, &quot;●&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;＋&quot;, &quot;－&quot;, &quot;×&quot; ,&quot;÷&quot; , &quot;→&quot;, &quot;←&quot;, &quot;↑&quot;, &quot;↓&quot;, &quot;℃&quot;, &quot;℉&quot;)
 	end if
 	symbolAt = SymbolArray(index)
 End Function
