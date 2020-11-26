@@ -116,53 +116,93 @@ sub is27
 end sub
 
 sub is28
+	oType = GetType(ThisComponent)
+	Select Case oType
+    case 1
         On Error GoTo err
         cursor = thiscomponent.currentController.getViewCursor()
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
+		&apos;
         insertSymbol(symbolAt(28))
         cursor.charFontNameAsian = originFont
         Exit Sub
+	case 2
+        Dim aoriginFont
+        aoriginFont = GetOriginFont(&quot;asian&quot;)
+       	InsertWD2(symbolAt(28))
+       	ReductionFontsA(aoriginFont)
+       	Exit Sub  
+    End Select
 err:
         insertSymbol(symbolAt(28))
 end sub
 
 sub is29
+	oType = GetType(ThisComponent)
+	Select Case oType
+    case 1
         On Error GoTo err
         cursor = thiscomponent.currentController.getViewCursor()
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
+		&apos;
         insertSymbol(symbolAt(29))
         cursor.charFontNameAsian = originFont
         Exit Sub
+	case 2
+        Dim aoriginFont
+        aoriginFont = GetOriginFont(&quot;asian&quot;)
+       	InsertWD2(symbolAt(29))
+       	ReductionFontsA(aoriginFont)  
+       	Exit Sub
+   	End Select
 err:
         insertSymbol(symbolAt(29))
 end sub
 
 sub is30
+	oType = GetType(ThisComponent)
+	Select Case oType
+    case 1
         On Error GoTo err
         cursor = thiscomponent.currentController.getViewCursor()
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
+		&apos;
         insertSymbol(symbolAt(30))
         cursor.charFontNameAsian = originFont
         Exit Sub
+	case 2
+        Dim aoriginFont
+        aoriginFont = GetOriginFont(&quot;asian&quot;)
+       	InsertWD2(symbolAt(30))
+       	ReductionFontsA(aoriginFont) 
+       	Exit Sub
+    End Select
 err:
         insertSymbol(symbolAt(30))
 end sub
 
 sub is31
+	oType = GetType(ThisComponent)
+	Select Case oType
+    case 1
         On Error GoTo err
         cursor = thiscomponent.currentController.getViewCursor()
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
-
+		&apos;
         insertSymbol(symbolAt(31))
         cursor.charFontNameAsian = originFont
         Exit Sub
+	case 2
+        Dim aoriginFont
+        aoriginFont = GetOriginFont(&quot;asian&quot;)
+       	InsertWD2(symbolAt(31))
+       	ReductionFontsA(aoriginFont) 
+       	Exit Sub
+  	End Select
 err:
         insertSymbol(symbolAt(31))
 end sub
@@ -229,6 +269,20 @@ Function getDocType(vDoc as object) As String
 
 End Function
 
+Function GetType(vDoc as object) As Integer
+
+	If vDoc.SupportsService(&quot;com.sun.star.text.TextDocument&quot;) Then
+		GetType = 1
+	ElseIf vDoc.SupportsService(&quot;com.sun.star.sheet.SpreadsheetDocument&quot;) Then
+		GetType = 2
+	ElseIf vDoc.SupportsService(&quot;com.sun.star.presentation.PresentationDocument&quot;) Then
+		GetType = 1
+	Else
+		GetType = 0
+	End If
+
+End Function
+
 
 sub insertSymbol(Symbols as String)
 rem ----------------------------------------------------------------------
@@ -244,13 +298,84 @@ rem ----------------------------------------------------------------------
 dim args1(1) as new com.sun.star.beans.PropertyValue
 args1(0).Name = &quot;Symbols&quot;
 args1(0).Value = Symbols
+args1(1).Name = &quot;FontName&quot;
+args1(1).Value = &quot;Wingdings 2&quot;
 dispatcher.executeDispatch(document, &quot;.uno:InsertSymbol&quot;, &quot;&quot;, 0, args1())
 if (len(Symbols)&gt;1 and getDocType(ThisComponent)&lt;&gt;&quot;calc&quot;) then
 	dispatcher.executeDispatch(document, &quot;.uno:GoLeft&quot;, &quot;&quot;, 0, args1())
 end if
 end sub
 
+REM *****
+REM ** InsertWD2
+REM *****
+Function InsertWD2(Symbols as String)
+	dim document   as object
+	dim dispatcher as object
+	&apos;
+	document   = ThisComponent.CurrentController.Frame
+	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
+	&apos;
+	dim args1(1) as new com.sun.star.beans.PropertyValue
+	args1(0).Name = &quot;Symbols&quot;
+	args1(0).Value = Symbols
+	args1(1).Name = &quot;FontName&quot;
+	args1(1).Value = &quot;Wingdings 2&quot;
+	&apos;
+	dispatcher.executeDispatch(document, &quot;.uno:InsertSymbol&quot;, &quot;&quot;, 0, args1())
+end Function
 
+REM *****
+REM ** ReductionFontsA
+REM *****
+Function ReductionFontsA(originFont as String)
+	dim document   as object
+	dim dispatcher as object
+	&apos;
+	document   = ThisComponent.CurrentController.Frame
+	dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
+	&apos;
+	dim args1(4) as new com.sun.star.beans.PropertyValue
+	args1(0).Name = &quot;CharFontName.StyleName&quot;
+	args1(0).Value = &quot;&quot;
+	args1(1).Name = &quot;CharFontName.Pitch&quot;
+	args1(1).Value = 2
+	args1(2).Name = &quot;CharFontName.CharSet&quot;
+	args1(2).Value = 0
+	args1(3).Name = &quot;CharFontName.Family&quot;
+	args1(3).Value = 4
+	args1(4).Name = &quot;CharFontName.FamilyName&quot;
+	args1(4).Value = originFont
+	&apos;
+	dispatcher.executeDispatch(document, &quot;.uno:CharFontName&quot;, &quot;&quot;, 0, args1())
+end Function
 
+REM *****
+REM ** GetOriginFont
+REM *****
+Function GetOriginFont(family as String) As String
+	Dim oDoc as Object
+	Dim oSheet as Object
+	Dim oCell as Object
+	Dim oSel as Object
+	Dim oCellAddr as Object
+	Dim oActCol as Long, oActRow as Long
+	Dim oShtNo as Integer
+	&apos;
+	oDoc = ThisComponent
+	oSel = oDoc.CurrentController.getSelection()
+	oCellAddr = oSel.getCellAddress()	
+	oActCol = oCellAddr.Column
+	oActRow = oCellAddr.Row
+	oShtNo = oCellAddr.Sheet
+	&apos;
+	oSheet = oDoc.getSheets().getByIndex(oShtNo)
+	oCell = oSheet.getCellByPosition(oActCol,oActRow)
+	if (family = &quot;asian&quot;) then
+		GetOriginFont = oCell.charFontNameAsian  
+	else
+		GetOriginFont = oCell.charFontName
+	endif
+End Function
 
 </script:module>
