@@ -32,7 +32,7 @@ sub is06
 end sub
 
 sub is07
-	insertSymbol(symbolAt(7))
+   	insertSymbol(symbolAt(7))
 end sub
 
 sub is08
@@ -124,7 +124,7 @@ sub is28
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
 		&apos;
-        insertSymbol(symbolAt(28))
+        InsertWD2(symbolAt(28))
         cursor.charFontNameAsian = originFont
         Exit Sub
 	case 2
@@ -147,7 +147,7 @@ sub is29
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
 		&apos;
-        insertSymbol(symbolAt(29))
+        InsertWD2(symbolAt(29))
         cursor.charFontNameAsian = originFont
         Exit Sub
 	case 2
@@ -170,7 +170,7 @@ sub is30
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
 		&apos;
-        insertSymbol(symbolAt(30))
+        InsertWD2(symbolAt(30))
         cursor.charFontNameAsian = originFont
         Exit Sub
 	case 2
@@ -193,7 +193,7 @@ sub is31
         originFont = cursor.charFontNameAsian
         cursor.charFontNameAsian = &quot;Wingdings 2&quot;
 		&apos;
-        insertSymbol(symbolAt(31))
+        InsertWD2(symbolAt(31))
         cursor.charFontNameAsian = originFont
         Exit Sub
 	case 2
@@ -295,11 +295,13 @@ document   = ThisComponent.CurrentController.Frame
 dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
 
 rem ----------------------------------------------------------------------
+cursor = thiscomponent.currentController.getViewCursor()
+originFont = cursor.charFontNameAsian
 dim args1(1) as new com.sun.star.beans.PropertyValue
 args1(0).Name = &quot;Symbols&quot;
 args1(0).Value = Symbols
 args1(1).Name = &quot;FontName&quot;
-args1(1).Value = &quot;Wingdings 2&quot;
+args1(1).Value = originFont
 dispatcher.executeDispatch(document, &quot;.uno:InsertSymbol&quot;, &quot;&quot;, 0, args1())
 if (len(Symbols)&gt;1 and getDocType(ThisComponent)&lt;&gt;&quot;calc&quot;) then
 	dispatcher.executeDispatch(document, &quot;.uno:GoLeft&quot;, &quot;&quot;, 0, args1())
