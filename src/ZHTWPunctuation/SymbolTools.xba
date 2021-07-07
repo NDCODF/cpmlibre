@@ -132,6 +132,12 @@ sub is28
         aoriginFont = GetOriginFont(&quot;asian&quot;)
        	InsertWD2(symbolAt(28))
        	ReductionFontsA(aoriginFont)
+       	Exit Sub
+	case 3
+        Dim boriginFont
+        boriginFont = thiscomponent.currentController.getSelection().getByIndex(0).getPropertyValue(&quot;CharFontNameAsian&quot;)
+       	InsertWD2(symbolAt(28))
+       	ReductionFontsA(boriginFont) 
        	Exit Sub  
     End Select
 err:
@@ -156,6 +162,12 @@ sub is29
        	InsertWD2(symbolAt(29))
        	ReductionFontsA(aoriginFont)  
        	Exit Sub
+	case 3
+        Dim boriginFont
+        boriginFont = thiscomponent.currentController.getSelection().getByIndex(0).getPropertyValue(&quot;CharFontNameAsian&quot;)
+       	InsertWD2(symbolAt(29))
+       	ReductionFontsA(boriginFont) 
+       	Exit Sub
    	End Select
 err:
         insertSymbol(symbolAt(29))
@@ -179,6 +191,12 @@ sub is30
        	InsertWD2(symbolAt(30))
        	ReductionFontsA(aoriginFont) 
        	Exit Sub
+	case 3
+        Dim boriginFont
+        boriginFont = thiscomponent.currentController.getSelection().getByIndex(0).getPropertyValue(&quot;CharFontNameAsian&quot;)
+       	InsertWD2(symbolAt(30))
+       	ReductionFontsA(boriginFont) 
+       	Exit Sub
     End Select
 err:
         insertSymbol(symbolAt(30))
@@ -201,6 +219,12 @@ sub is31
         aoriginFont = GetOriginFont(&quot;asian&quot;)
        	InsertWD2(symbolAt(31))
        	ReductionFontsA(aoriginFont) 
+       	Exit Sub
+	case 3
+        Dim boriginFont
+        boriginFont = thiscomponent.currentController.getSelection().getByIndex(0).getPropertyValue(&quot;CharFontNameAsian&quot;)
+       	InsertWD2(symbolAt(31))
+       	ReductionFontsA(boriginFont) 
        	Exit Sub
   	End Select
 err:
@@ -276,7 +300,7 @@ Function GetType(vDoc as object) As Integer
 	ElseIf vDoc.SupportsService(&quot;com.sun.star.sheet.SpreadsheetDocument&quot;) Then
 		GetType = 2
 	ElseIf vDoc.SupportsService(&quot;com.sun.star.presentation.PresentationDocument&quot;) Then
-		GetType = 1
+		GetType = 3
 	Else
 		GetType = 0
 	End If
@@ -295,8 +319,18 @@ document   = ThisComponent.CurrentController.Frame
 dispatcher = createUnoService(&quot;com.sun.star.frame.DispatchHelper&quot;)
 
 rem ----------------------------------------------------------------------
-cursor = thiscomponent.currentController.getViewCursor()
-originFont = cursor.charFontNameAsian
+dim originFont
+	oType = GetType(ThisComponent)
+	Select Case oType
+    case 1
+        cursor = thiscomponent.currentController.getViewCursor()
+		originFont = cursor.charFontNameAsian
+	case 2
+        originFont = GetOriginFont(&quot;asian&quot;)
+    case 3
+    	originFont = thiscomponent.currentController.getSelection().getByIndex(0).getPropertyValue(&quot;CharFontNameAsian&quot;)
+  	End Select
+
 dim args1(1) as new com.sun.star.beans.PropertyValue
 args1(0).Name = &quot;Symbols&quot;
 args1(0).Value = Symbols
